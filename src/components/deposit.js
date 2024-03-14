@@ -1,8 +1,7 @@
 import React,  { useState, useContext } from "react";
 import { UserContext, Card } from "./context";
 
-function Deposit(e){
-    e.preventDefault();
+function Deposit(){
     const [depositAmount, setDepositAmount] = useState(0)
     const ctx = useContext(UserContext);
     let activeUser = ctx.activeUser;
