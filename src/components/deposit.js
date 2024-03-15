@@ -7,7 +7,8 @@ function Deposit(){
     let activeUser = ctx.activeUser;
     // console.log('deposit amount:',typeof depositAmount);
 
-    function makeDeposit() {
+    function makeDeposit(e) {
+        e.preventDefault();
         if (depositAmount > 0) {
             const newBalance = activeUser.balance + depositAmount;
             activeUser.balance = newBalance;
