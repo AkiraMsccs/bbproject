@@ -6,7 +6,7 @@ div nav{
     z-index: 1000;
     position: fixed;
     padding-top: .7em;
-    box-shadow: 1px 4px 6px black;
+    box-shadow: 1px 6px 11px rgb(82,82,82);
 }
 /* div nav a{
     margin-top: 5em;
@@ -102,7 +102,7 @@ body{
     border-bottom: 1px solid rgb(114, 114, 114);
     margin-bottom:.5em ;
 }
-.container button {
+.container button,.lin {
     padding: 12px 30px;
     border-radius: 30px;
     margin-top: 1em;
@@ -114,6 +114,12 @@ body{
     font-size: 15px;
 }
 .container button:hover {
+    background: white;
+    color: rgb(62, 62, 63);
+    transition: 0.5s;
+    cursor: pointer;
+}
+.container .lin:hover {
     background: white;
     color: rgb(62, 62, 63);
     transition: 0.5s;
