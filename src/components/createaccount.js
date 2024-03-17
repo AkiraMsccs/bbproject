@@ -82,7 +82,7 @@ function CreateAccount() {
                     <>
                         <h3>Success</h3>
                         <button type="submit" className="btn btn-light" onClick={clearForm}>Add another account</button><br/><br />
-                        <label>Or</label> <br />
+                        <label>Or</label> <br /><br />
                         <a className="lin" href="#/login">Login</a>
                     </>
                 )}
