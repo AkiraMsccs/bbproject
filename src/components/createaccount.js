@@ -38,6 +38,10 @@ function CreateAccount() {
 
     function handleCreate(e) {
         e.preventDefault();
+          if (ctx.users.some(user => user.email === email)) {
+            alert('Error: Email already exists');
+            return;
+        }
         // console.log(name, email, password);
         if (!validate(name, 'name')) return;
         if (!validate(email, 'email')) return;
